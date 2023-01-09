@@ -48,6 +48,7 @@ public class ObjManager : MonoBehaviour
             {
                 GameObject.Instantiate(_prefabs[i], _clickPosition, Quaternion.identity);
                 Debug.Log("POOL triggered at " + _prefabs[i]);
+                _prefabs.Remove(_prefabs[i]);
 
             }
         }
